@@ -20,6 +20,7 @@ const allowedOrigins = [
     credentials: true,
     origin: function (origin, callback) {
       // Check if the incoming origin is in the allowedOrigins list
+      console.log(origin, !origin || allowedOrigins.indexOf(origin) !== -1)
       if (!origin || allowedOrigins.indexOf(origin) !== -1) {
         callback(null, true);
       } else {
