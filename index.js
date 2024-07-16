@@ -14,6 +14,7 @@ databaseConnection();
 const allowedOrigins = [
     "http://localhost:3000",
     "https://diabities-back.onrender.com",
+    'https://diabetesmonitor.netlify.app'
   ];
 
   const corsOptions = {
